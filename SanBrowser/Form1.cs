@@ -15,5 +15,21 @@ namespace SanBrowser
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtUrl_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //To Do 
+              
+                webBrowser.Navigate(new Uri(txtUrl.Text.ToString()));
+            }
+
+        }
     }
 }
