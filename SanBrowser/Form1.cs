@@ -67,6 +67,15 @@ namespace SanBrowser
 
             // string curDir = Directory.GetCurrentDirectory();
             //  this.webBrowser.Url = new Uri(String.Format("file:///index.html", curDir));
+        }
+
+        private void webBrowser_NewWindow(object sender, CancelEventArgs e)
+        {
+            e.Cancel = true;
+            webBrowser.Navigate(webBrowser.StatusText);
+            //Force all ink to open in the same window
+            //No external internet explorer or any browser
+            //popping up
         }   
 
     }

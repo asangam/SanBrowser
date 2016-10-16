@@ -78,6 +78,8 @@
             this.webBrowser.Name = "webBrowser";
             this.webBrowser.Size = new System.Drawing.Size(751, 371);
             this.webBrowser.TabIndex = 0;
+            this.webBrowser.Url = new System.Uri("", System.UriKind.Relative);
+            this.webBrowser.NewWindow += new System.ComponentModel.CancelEventHandler(this.webBrowser_NewWindow);
             // 
             // panel7
             // 
