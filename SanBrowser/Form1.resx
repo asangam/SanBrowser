@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pnlHome.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAltJREFUeF7t
         l8GNE1EUBM2BG1xJgM2AGCAICIM4yIJNghggAxLY8944AO9LtrRaNYu99Wam57tLKsmy7KfWv9UhhBBC
@@ -134,7 +134,7 @@
         5w4M1wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pnlStop.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAfhJREFUeF7t
         3FFO5DAQRdHeALAcYOewAWA5wAbA1eJJrcik49gdV9n3SPWBNB+d+9AwGqGcAAAAAAAAAAAAAACo8JDu
@@ -148,18 +148,7 @@
         bSUAAAAAAAAAAAAAYDKn0y9PgzBoX9CeZQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pnlBackward.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAATZJREFUeF7t
-        101KA1EUhNFsQN2k7sOfvam70teQQAYXR+lUmZwDd/74ChL6AAAAAAAAUO71eAS8rfs5nhGu7H3dKb4R
-        rmyKfzoj7Oxj3RT+/Iywk5d1U/DpjLCDh3Wf66bg0xlhB0YoYIQCRihghAJGKGCEAkYoYIQCRihghAJG
-        KGCEAkYoYIQCRihghAJGKGCEAkYoYIQCNzHC9NBbvroRpkfe+lWNMD3wHq5mhOlx93IVI0wPu5czQPD8
-        BAXPn3DwquL/d4/rfA2HiB8kfpD4QeIHbfG/1k2hpxP/gsQPEj9I/CDxg8QPEj9oi/+9bgo9nfgXJH6Q
-        +EHiBz2tEz9E/CDxg8QPEj9I/LDndVPo6cTfyRZ2Cn5+4u/srxHEv5JpBPGv7HwE8UO28OIDAAAAAADF
-        Dodf2w4mqaPKxSMAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="pnlRefresh.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABRpJREFUeF7t
         nFmodlMYx4858xiKJOOVIUSSK1MuRKYroty4MLugZM4sIiREZkoUUS4UIlJCkZkLmeexyPT711m12/3P
@@ -186,7 +175,18 @@
         BKMnVTqNVzVrOoxDG8a2xCAIgiAIgiAIgiAIgiAIgiAIgoIsLf0PnPoPJN4A4sQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pnlForward.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAATZJREFUeF7t
+        101KA1EUhNFsQN2k7sOfvam70teQQAYXR+lUmZwDd/74ChL6AAAAAAAAUO71eAS8rfs5nhGu7H3dKb4R
+        rmyKfzoj7Oxj3RT+/Iywk5d1U/DpjLCDh3Wf66bg0xlhB0YoYIQCRihghAJGKGCEAkYoYIQCRihghAJG
+        KGCEAkYoYIQCRihghAJGKGCEAkYoYIQCNzHC9NBbvroRpkfe+lWNMD3wHq5mhOlx93IVI0wPu5czQPD8
+        BAXPn3DwquL/d4/rfA2HiB8kfpD4QeIHbfG/1k2hpxP/gsQPEj9I/CDxg8QPEj9oi/+9bgo9nfgXJH6Q
+        +EHiBz2tEz9E/CDxg8QPEj9I/LDndVPo6cTfyRZ2Cn5+4u/srxHEv5JpBPGv7HwE8UO28OIDAAAAAADF
+        Dodf2w4mqaPKxSMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAASVJREFUeF7t
         19tpw0AURVEVkPSY9JGHe3NSVzJDLPCHMR7Q6B6iteCC8OfZIOEFAAAAAAAg3OlyFOjD/1xOhJ1djy/C

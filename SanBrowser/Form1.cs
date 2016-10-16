@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -10,8 +11,10 @@ using System.Windows.Forms;
 namespace SanBrowser
 {
     public partial class Form1 : Form
+
+     
     {
-        public Form1()
+              public Form1()
         {
             InitializeComponent();
         }
@@ -20,16 +23,52 @@ namespace SanBrowser
         {
            
         }
+        
 
         private void txtUrl_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                //To Do 
+                //When Enter key is press after entering the URL the code down below executes
+                // and the desired page opens
               
                 webBrowser.Navigate(new Uri(txtUrl.Text.ToString()));
+                txtUrl.Text = "http://www";
+                txtUrl.Text = txtUrl.Text;
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            webBrowser.GoBack();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            webBrowser.GoForward();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            webBrowser.Refresh();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            webBrowser.Stop();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            webBrowser.Navigate(new Uri("http://bing.com"));
+           // webBrowser.Navigate("index.html");
+
+
+            // string curDir = Directory.GetCurrentDirectory();
+            //  this.webBrowser.Url = new Uri(String.Format("file:///index.html", curDir));
+        }   
+
     }
 }
+    
