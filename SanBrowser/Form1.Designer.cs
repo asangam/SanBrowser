@@ -38,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.webBrowser = new System.Windows.Forms.WebBrowser();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
@@ -46,11 +47,11 @@
             // 
             this.txtUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUrl.Font = new System.Drawing.Font("Ubuntu Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUrl.Location = new System.Drawing.Point(193, 12);
+            this.txtUrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUrl.Location = new System.Drawing.Point(194, 3);
             this.txtUrl.Multiline = true;
             this.txtUrl.Name = "txtUrl";
-            this.txtUrl.Size = new System.Drawing.Size(562, 31);
+            this.txtUrl.Size = new System.Drawing.Size(728, 31);
             this.txtUrl.TabIndex = 0;
             this.txtUrl.Text = "http://www";
             this.txtUrl.TextChanged += new System.EventHandler(this.txtUrl_TextChanged);
@@ -67,14 +68,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(755, 49);
+            this.panel1.Size = new System.Drawing.Size(925, 38);
             this.panel1.TabIndex = 1;
             // 
             // button5
             // 
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(155, 12);
+            this.button5.Location = new System.Drawing.Point(156, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(32, 30);
             this.button5.TabIndex = 10;
@@ -85,7 +86,7 @@
             // 
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(117, 12);
+            this.button4.Location = new System.Drawing.Point(118, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(32, 30);
             this.button4.TabIndex = 9;
@@ -96,7 +97,7 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(79, 12);
+            this.button3.Location = new System.Drawing.Point(80, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(32, 30);
             this.button3.TabIndex = 8;
@@ -107,7 +108,7 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(41, 12);
+            this.button2.Location = new System.Drawing.Point(42, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(32, 30);
             this.button2.TabIndex = 7;
@@ -118,7 +119,7 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(3, 12);
+            this.button1.Location = new System.Drawing.Point(4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(32, 30);
             this.button1.TabIndex = 6;
@@ -132,9 +133,10 @@
             this.webBrowser.Location = new System.Drawing.Point(0, 0);
             this.webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(751, 371);
+            this.webBrowser.Size = new System.Drawing.Size(924, 459);
             this.webBrowser.TabIndex = 0;
             this.webBrowser.Url = new System.Uri("", System.UriKind.Relative);
+            this.webBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.WebBrowser_DocumentCompleted);
             this.webBrowser.NewWindow += new System.ComponentModel.CancelEventHandler(this.webBrowser_NewWindow);
             // 
             // panel7
@@ -144,16 +146,25 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel7.Controls.Add(this.webBrowser);
-            this.panel7.Location = new System.Drawing.Point(3, 58);
+            this.panel7.Location = new System.Drawing.Point(0, 39);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(755, 375);
+            this.panel7.Size = new System.Drawing.Size(928, 463);
             this.panel7.TabIndex = 2;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(4, 508);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(918, 23);
+            this.progressBar1.TabIndex = 3;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 437);
+            this.ClientSize = new System.Drawing.Size(925, 533);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -179,6 +190,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.WebBrowser webBrowser;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
