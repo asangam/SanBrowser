@@ -72,7 +72,7 @@ namespace SanBrowser
 
         private void button5_Click(object sender, EventArgs e)
         {
-            webBrowser.Navigate(new Uri("http://bing.com"));
+            webBrowser.Navigate(new Uri("http://google.com"));
          //   webBrowser.Navigate("file://temp.html");
 
           //  webBrowser.Url = new Uri("file://\\temp.html");
@@ -99,8 +99,28 @@ namespace SanBrowser
         private void txtUrl_TextChanged(object sender, EventArgs e)
         {
 
-        }   
+        }
 
+        private void WebBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+            webBrowser.Refresh();
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     
