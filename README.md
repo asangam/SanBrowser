@@ -1,5 +1,5 @@
 # SanBrowser
-A Sample Browser created using C#/ Windows Form Application
+A <b>Sample Browser</b> created using C#/ Windows Form Application
 
 <img src="https://github.com/asangam/SanBrowser/blob/master/Screenshot.png" alt="SanBrowser">
 
